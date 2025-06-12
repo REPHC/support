@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ja"><head>
+<html lang="ja">
+	<head>
 		<meta charset="utf-8">
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -37,7 +38,7 @@
 								<a href="https://rephc.github.io/home">ホーム</a>
 							</li>
 							<li>
-								<a href="https://rephc.github.io/information">お問い合わせ</a>
+								<a href="https://rephc.github.io/support">お問い合わせ</a>
 							</li>
 						</ol>
 					</div>
@@ -49,19 +50,19 @@
 			</div>
 		</div>
 		<script>
-		           function toggleMenu() {
-		             const menu = document.getElementById('mainMenu');
-		             const toggle = document.getElementById('menuToggle');
-		             const isOpen = menu.classList.toggle('open');
-		             toggle.textContent = isOpen ? '✕ 閉じる' : '☰ メニュー';
-		           }
+		    function toggleMenu() {
+		    const menu = document.getElementById('mainMenu');
+		    const toggle = document.getElementById('menuToggle');
+		    const isOpen = menu.classList.toggle('open');
+		    toggle.textContent = isOpen ? '✕ 閉じる' : '☰ メニュー';
+		    }
 
-		           document.querySelectorAll('#mainMenu a').forEach(link => {
-		             link.addEventListener('click', () => {
-		               document.getElementById('mainMenu').classList.remove('open');
-		               document.getElementById('menuToggle').textContent = '☰ メニュー';
-		             });
-		           });
+		    document.querySelectorAll('#mainMenu a').forEach(link => {
+		    link.addEventListener('click', () => {
+		        document.getElementById('mainMenu').classList.remove('open');
+		        document.getElementById('menuToggle').textContent = '☰ メニュー';
+		        });
+		    );
 		</script>
 	</body>
 </html>
